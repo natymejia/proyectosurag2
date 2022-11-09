@@ -41,11 +41,100 @@
           </div>
         </nav>
       </header>
+      <br><br><br>
       <main>
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-6"></div>
-                <div class="col-12 col-md-6"></div>
+                <div class="col-12 col-md-6">
+                  <img src="../../assets/img/medica.png" alt="" class="w-100 img-fluid">
+                </div>
+                <div class="col-12 col-md-6 align-self-center">
+                  <button type="button" class="btn btn-outline-primary" data-bs-toggle="collapse" data-bs-target="#collapseExample">Regristrar Especialista</button>
+                  <div class="collapse mt-3" id="collapseExample">
+                    <div class="card card-body">
+                      <form>
+                        <h3>Registro</h3>
+                        <div class="row">
+                          <div class="col-12 col-md-6">
+                            <div class="input-group mb-3">
+                              <span class="input-group-text" id="basic-addon1"><i class="bi bi-person-heart"></i></span>
+                              <input type="text" class="form-control" placeholder="Nombres Completos">
+                            </div>
+                          </div>
+                          <div class="col-12 col-md-6">
+                            <div class="input-group mb-3">
+                              <span class="input-group-text" id="basic-addon1"><i class="bi bi-postcard-heart"></i></span>
+                              <input type="text" class="form-control" placeholder="Documento de Identidad">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-12">
+                            <select class="form-select">
+                              <option selected>Especialidad</option>
+                              <option value="1">Ortopedia</option>
+                              <option value="2">Cirugia General</option>
+                              <option value="3">Medicina Interna</option>
+                              <option value="4">Pediatría</option>
+                              <option value="5">Ginecología</option>  
+                            </select>
+                          </div>
+                        </div>
+                        <div class="row mt-3">
+                          <div class="col-12 col-md-6">
+                            <div class="input-group mb-3">
+                              <span class="input-group-text" id="basic-addon1"><i class="bi bi-r-circle"></i></span>
+                              <input type="text" class="form-control" placeholder="Registro Profesional">
+                            </div>
+                          </div>
+                          <div class="col-12 col-md-6">
+                            <div class="input-group mb-3">
+                              <span class="input-group-text" id="basic-addon1"><i class="bi bi-envelope-heart"></i></span>
+                              <input type="text" class="form-control" placeholder="Correo Electrónico">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-12 col-md-6">
+                            <select class="form-select">
+                              <option selected>Sede</option>
+                              <option value="1">Molinos</option>
+                              <option value="2">Industriales</option>
+                              <option value="3">Córdoba</option>
+                              <option value="4">San Diego</option>
+                              <option value="5">La 33</option>
+                            </select>
+                          </div>
+                          <div class="col-12 col-md-6">
+                            <select class="form-select" aria-label="Default select example">
+                              <option selected>Horarios</option>
+                              <option value="1">06:00 - 14:00</option>
+                              <option value="2">14:00 - 22:00</option>
+                              <option value="3">22:00 - 06:00</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="row  mt-3">
+                          <div class="col-12">
+                            <div class="form-floating">
+                              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                              <label for="floatingTextarea">Descripción General</label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row mt-3">
+                          <div class="col-12">
+                            <div class="input-group mb-3">
+                              <span class="input-group-text" id="basic-addon1"><i class="bi bi-camera"></i></span>
+                              <input type="text" class="form-control" placeholder="Fotografía">
+                            </div>
+                          </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Enviar</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
             </div>
         </div>
       </main>
