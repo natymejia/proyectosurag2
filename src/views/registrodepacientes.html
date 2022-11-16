@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../assets/styles/estilosHome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg azulSura navbar-dark fixed-top">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="{% url 'home' %}">GESTORAPP</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'medicos' %}">Médicos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Pacientes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled">Disabled</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <br><br><br>
+      <main>
+        <section>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/gestorappngz.appspot.com/o/banner1.png?alt=media&token=7d1dcb12-3098-4f80-8f4e-51bbc92512e6" class="d-block w-100" height="300" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/gestorappngz.appspot.com/o/banner2.png?alt=media&token=c1622a9e-3fe0-495a-8239-c86c20da5121" class="d-block w-100" height="300" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/gestorappngz.appspot.com/o/banner3.png?alt=media&token=6c0e5c1b-6ae1-4d27-9700-4c0a0de3e424" class="d-block w-100" height="300" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 align-self-center">
+                  <button type="button" class="btn btn-outline-primary mx-auto d-block" data-bs-toggle="collapse" data-bs-target="#collapseExample">Registrarse</button>
+                  <div class="collapse mt-3" id="collapseExample">
+                    <div class="card card-body">
+                      <form>
+                        <h3 class="text-center mb-4">Registro</h3>
+                        <div class="row">
+                          <div class="col-12 col-md-6">
+                            <div class="input-group mb-3">
+                              <span class="input-group-text" id="basic-addon1"><i class="bi bi-person-heart"></i></span>
+                              <input type="text" class="form-control" placeholder="Nombres y Apellidos">
+                            </div>
+                          </div>
+                          <div class="col-12 col-md-6">
+                            <div class="input-group mb-3">
+                              <span class="input-group-text" id="basic-addon1"><i class="bi bi-postcard-heart"></i></span>
+                              <input type="text" class="form-control" placeholder="Documento de Identidad">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-12">
+                            <select class="form-select">
+                              <option selected>Régimen</option>
+                              <option value="1">Contributivo</option>
+                              <option value="2">Subsidiado</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="row mt-3">
+                          <div class="col-12 col-md-6">
+                            <div class="input-group mb-3">
+                              <span class="input-group-text" id="basic-addon1"><i class="bi bi-telephone-fill"></i></span>
+                              <input type="text" class="form-control" placeholder="Teléfono">
+                            </div>
+                          </div>
+                          <div class="col-12 col-md-6">
+                            <div class="input-group mb-3">
+                              <span class="input-group-text" id="basic-addon1"><i class="bi bi-envelope-heart"></i></span>
+                              <input type="text" class="form-control" placeholder="Correo Electrónico">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-12 col-md-6">
+                            <select class="form-select">
+                              <option selected>Grupo de Ingreso</option>
+                              <option value="1">A</option>
+                              <option value="2">B</option>
+                              <option value="3">C</option>
+                            </select>
+                          </div>
+                          <div class="col-12 col-md-6">
+                            <div class="input-group mb-3">
+                              <span class="input-group-text" id="basic-addon1"><i class="bi bi-currency-dollar"></i></span>
+                              <input type="text" class="form-control" placeholder="Cuota Moderadora">
+                            </div>
+                          </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Enviar</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/gestorappngz.appspot.com/o/paciente1.jpg?alt=media&token=95aa1812-4d93-4111-bdc2-9a644ab86149" alt="" class="w-100 img-fluid">
+                  </div>
+            </div>
+        </div>
+      </main>
+      <footer>
+        <div class="container-fluid azulSura text-white mt-5 p-2">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-2"> 
+                    <img src=https://firebasestorage.googleapis.com/v0/b/gestorappngz.appspot.com/o/gestor.jpg?alt=media&token=4966b4e5-6019-44f4-9dd0-6415a4902015 alt="" class="img-fluid">
+                </div>
+
+                <div class="col-12 col-md-2 mt-4 text-center">
+                    <h5>Servicios</h5>
+                    <h6>Registro</h6>
+                    <h6>Citas Médicas</h6>
+                    <h6>Laboratorio Clínico</h6>
+                    <h6>Maternidad</h6>
+                    <h6>Primera Infancia</h6>
+                    <h6>Deberes del Paciente</h6>
+                    <h6>Derechos del Paciente</h6>
+                </div>
+                
+                <div class="col-12 col-md-2 mt-4 text-center">
+                    <h5>Líneas de Atención</h5>
+                    <h6>Medellín: 604 448 6115</h6>
+                    <h6>Bogotá: 601 489 7941</h6>
+                    <h6>Resto del país: 01 8000 519 519</h6>
+                    <h6>Escríbenos tus PQRS</h6>
+                    <h5>Consultas</h5>
+                    <h6>Políticas de uso y seguridad</h6>
+                    <h6>Políticas de privacidad y datos y Ley de datos personales</h6>
+                </div>
+            </div>
+        </div> 
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <script src="../helpers/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+</body>
+
+</html>
