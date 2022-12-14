@@ -58,19 +58,19 @@
                           <div class="col-12 col-md-6">
                             <div class="input-group mb-3">
                               <span class="input-group-text" id="basic-addon1"><i class="bi bi-person-heart"></i></span>
-                              <input type="text" class="form-control" placeholder="Nombres Completos">
+                              <input type="text" class="form-control" placeholder="Nombres Completos" id="nombres">
                             </div>
                           </div>
                           <div class="col-12 col-md-6">
                             <div class="input-group mb-3">
                               <span class="input-group-text" id="basic-addon1"><i class="bi bi-postcard-heart"></i></span>
-                              <input type="text" class="form-control" placeholder="Documento de Identidad">
+                              <input type="text" class="form-control" placeholder="Documento de Identidad" id="documento">
                             </div>
                           </div>
                         </div>
                         <div class="row">
                           <div class="col-12">
-                            <select class="form-select">
+                            <select class="form-select" id="especialidad">
                               <option selected>Especialidad</option>
                               <option value="1">Ortopedia</option>
                               <option value="2">Cirugia General</option>
@@ -84,19 +84,19 @@
                           <div class="col-12 col-md-6">
                             <div class="input-group mb-3">
                               <span class="input-group-text" id="basic-addon1"><i class="bi bi-r-circle"></i></span>
-                              <input type="text" class="form-control" placeholder="Registro Profesional">
+                              <input type="text" class="form-control" placeholder="Registro Profesional" id="registro">
                             </div>
                           </div>
                           <div class="col-12 col-md-6">
                             <div class="input-group mb-3">
                               <span class="input-group-text" id="basic-addon1"><i class="bi bi-envelope-heart"></i></span>
-                              <input type="text" class="form-control" placeholder="Correo Electrónico">
+                              <input type="text" class="form-control" placeholder="Correo Electrónico" id="correo">
                             </div>
                           </div>
                         </div>
                         <div class="row">
                           <div class="col-12 col-md-6">
-                            <select class="form-select">
+                            <select class="form-select" id="sede">
                               <option selected>Sede</option>
                               <option value="1">Molinos</option>
                               <option value="2">Industriales</option>
@@ -106,7 +106,7 @@
                             </select>
                           </div>
                           <div class="col-12 col-md-6">
-                            <select class="form-select" aria-label="Default select example">
+                            <select class="form-select" id="hora">
                               <option selected>Horarios</option>
                               <option value="1">06:00 - 14:00</option>
                               <option value="2">14:00 - 22:00</option>
@@ -117,7 +117,7 @@
                         <div class="row  mt-3">
                           <div class="col-12">
                             <div class="form-floating">
-                              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                              <textarea class="form-control" placeholder="Leave a comment here" id="descripcion"></textarea>
                               <label for="floatingTextarea">Descripción General</label>
                             </div>
                           </div>
@@ -126,11 +126,11 @@
                           <div class="col-12">
                             <div class="input-group mb-3">
                               <span class="input-group-text" id="basic-addon1"><i class="bi bi-camera"></i></span>
-                              <input type="text" class="form-control" placeholder="Fotografía">
+                              <input type="text" class="form-control" placeholder="Fotografía" id="fotografia">
                             </div>
                           </div>
                         </div>
-                        <button type="submit" class="btn btn-primary w-100">Enviar</button>
+                        <button type="submit" class="btn btn-primary w-100" id="botonenvio">Enviar</button>
                       </form>
                     </div>
                   </div>
@@ -142,6 +142,8 @@
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
   <script src="../helpers/wow.min.js"></script>
+  <script src="../controllers/controladorMedico.js" type="module"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script>
     new WOW().init();
   </script>
