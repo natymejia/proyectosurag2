@@ -1,7 +1,7 @@
 export function validarFormulario(datos){
 
     //Referencias a etiquetas que quiero validar
-    let etiquetaNombre=document.getElementById("nombres")
+    let etiquetaNombre=document.getElementById("nombre")
     let etiquetaDocumento=document.getElementById("documento")
     let etiquetaRegistro=document.getElementById("registro")
 

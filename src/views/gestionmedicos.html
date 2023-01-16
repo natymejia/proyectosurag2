@@ -25,13 +25,13 @@
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+                  <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="{% url 'medicos' %}">Medicos</a>
+                  <a class="nav-link" href="/src/views/gestionmedicos.html">Medicos</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Pricing</a>
+                  <a class="nav-link" href="/src/views/registrodepacientes.html">Pacientes</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link disabled">Disabled</a>
@@ -49,7 +49,7 @@
                   <img src="../../assets/img/medica.png" alt="" class="w-100 img-fluid">
                 </div>
                 <div class="col-12 col-md-6 align-self-center">
-                  <button type="button" class="btn btn-outline-primary" data-bs-toggle="collapse" data-bs-target="#collapseExample">Regristrar Especialista</button>
+                  <button type="button" class="btn btn-outline-primary" data-bs-toggle="collapse" data-bs-target="#collapseExample">Registrar Especialista</button>
                   <div class="collapse mt-3" id="collapseExample">
                     <div class="card card-body">
                       <form>
@@ -138,12 +138,20 @@
             </div>
         </div>
       </main>
+      <section>
+        <div class="container my-5">
+          <div class="row row-cols-1 row-cols-md-5" id="fila">
+
+          </div>
+        </div>
+      </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
   <script src="../helpers/wow.min.js"></script>
   <script src="../controllers/controladorMedico.js" type="module"></script>
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="../controllers/controladorspintarmedicos.js" type="module"></script>
   <script>
     new WOW().init();
   </script>

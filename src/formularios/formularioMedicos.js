@@ -1,3 +1,4 @@
+
 //creamos una función que nos permita recibir los datos del formulario
 import {validarFormulario} from './validacionFormularioMedicos.js'
 export function capturarDatos(etiquetaNombre,etiquetaDocumento,etiquetaEspecialidad,etiquetaRegistro,etiquetaCorreo,etiquetaSede,etiquetaHora,etiquetaDescripcion,etiquetaFotografia){
