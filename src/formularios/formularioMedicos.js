@@ -18,7 +18,7 @@ let fotografiaMedico=etiquetaFotografia.value
 //objeto= almacenar varios datos en 1 solo espacio de memoria
 
 let datosFormularioMedico={
-    nombre:nombresMedico,
+    nombres:nombresMedico,
     documento:documentoMedico,
     especialidad:especialidadMedico,
     registro:registroMedico,

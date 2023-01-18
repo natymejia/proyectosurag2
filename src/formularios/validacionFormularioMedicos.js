@@ -1,3 +1,5 @@
+import{registrarMedico} from "../../services/registrarMedico.js"
+
 export function validarFormulario(datos){
 
     //Referencias a etiquetas que quiero validar
@@ -23,20 +25,11 @@ if(nombresMedico=="" && documentoMedico==""){
 }else if(nombresMedico=="" && documentoMedico!=""){
     etiquetaNombre.classList.add("is-invalid")
     etiquetaDocumento.classList.remove("is.invalid")
-    Swal.fire({
-        icon: 'error',
-        title: 'Oops...',
-        text: 'El nombre es obligatorio',        
-      })
 }else if(nombresMedico!="" && documentoMedico==""){
     etiquetaNombre.classList.remove("is-invalid")
     etiquetaDocumento.classList.add("is.invalid")
-    Swal.fire({
-        icon: 'error',
-        title: 'Oops...',
-        text: 'El documento es obligatorio',        
-      })
 }else{
+    registrarMedico(datos)
     etiquetaNombre.classList.remove("is-invalid")
     etiquetaDocumento.classList.remove("is.invalid")
 }
